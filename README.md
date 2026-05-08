@@ -1,4 +1,4 @@
-# 🏥 Sistema de Triaje Hospitalario — Scala
+# Sistema de Triaje Hospitalario — Scala
 
 **Entrega 3 · Algoritmos y Estructura de Datos**  
 Universidad del Valle de Guatemala · Facultad de Ingeniería
@@ -10,13 +10,13 @@ Universidad del Valle de Guatemala · Facultad de Ingeniería
 
 ---
 
-## 📌 Descripción del Proyecto
+## Descripción del Proyecto
 
 Sistema de gestión de triaje hospitalario que demuestra el uso combinado de múltiples estructuras de datos en Scala. El sistema permite registrar pacientes, despachar al más urgente y consultar el historial de atenciones.
 
 ---
 
-## 🏗️ Estructuras de Datos Utilizadas
+## Estructuras de Datos Utilizadas
 
 | Estructura | Rol en el Sistema | Complejidad Principal |
 |---|---|---|
@@ -27,7 +27,7 @@ Sistema de gestión de triaje hospitalario que demuestra el uso combinado de mú
 
 ---
 
-## 🚀 Cómo Ejecutar
+## Cómo Ejecutar
 
 ### Requisitos
 - **Scala** 2.13+ o 3.x
@@ -51,7 +51,7 @@ sbt run
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 proyecto-scala/
@@ -59,11 +59,12 @@ proyecto-scala/
 │   └── main/
 │       └── scala/
 │           └── TriageHospital.scala   # Implementación principal
-├── diagrams/
-│   └── uml_sistema_triaje.xml         # Diagrama UML (draw.io)
-├── docs/
-│   └── Entrega3_EstructurasDatos.docx # Documento del informe
+├── UML/
+│   └── uml_scala.png                  # Diagrama UML (draw.io)
+├── proyect/
+│   └── build.properties
 ├── .gitignore
+|── build.sbt
 └── README.md
 ```
 
@@ -94,7 +95,7 @@ SistemaTriaje (orquestador)
 
 ---
 
-## 💡 ¿Por qué Scala para este problema?
+## ¿Por qué Scala para este problema?
 
 - **Inmutabilidad por defecto**: `List` y `Map` son inmutables → sin efectos secundarios accidentales
 - **Case classes**: `Paciente` es un modelo de datos limpio y seguro
@@ -104,7 +105,7 @@ SistemaTriaje (orquestador)
 
 ---
 
-## 📊 Salida Esperada (fragmento)
+## Salida Esperada (fragmento)
 
 ```
 ============================================================
@@ -117,15 +118,15 @@ SistemaTriaje (orquestador)
 ...
 
 --- Fase 3: Atención de pacientes ---
-⏭  Próximo a atender: Paciente[205] Carlos Gómez (prioridad=5, ...)
-🏥 Atendido por Urgencias: Carlos Gómez (prioridad=5)
-🏥 Atendido por Urgencias: José Herrera (prioridad=5)
-🏥 Atendido por Traumatología: Pedro Ramírez (prioridad=4)
+    Próximo a atender: Paciente[205] Carlos Gómez (prioridad=5, ...)
+    Atendido por Urgencias: Carlos Gómez (prioridad=5)
+    Atendido por Urgencias: José Herrera (prioridad=5)
+    Atendido por Traumatología: Pedro Ramírez (prioridad=4)
 ...
 ```
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Proyecto académico — Universidad del Valle de Guatemala, 2025.
